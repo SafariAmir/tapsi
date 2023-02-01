@@ -1,0 +1,79 @@
+/* ********************* hamburger menu ******************* */
+
+.hamburger{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.ham1 , .ham2 , .ham3{
+    width: 25px;
+    height: 4px;
+    margin: 2px 0;
+    background-color: #000000;
+    transition: 0.5s ease;
+}
+.change .ham2{
+    opacity: 0;
+}
+.change .ham1{
+    transform: rotate(-45deg) translate(-6px,2px);
+}
+.change .ham3{
+    transform: rotate(45deg) translate(-6px,-2px);
+}
+
+@media (max-width: 550px) {
+    .hamburger{
+        display: block;
+    }
+    
+    #nav.active{
+        display: block;
+    }
+    #nav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        border-top: rgb(214, 206, 206) solid 1px;
+        /* display: block; */
+        background-color: #fff;
+        display: none;
+    }
+    .nav-item{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #nav .nav-item a{
+        margin: 10px 15px;
+    }
+    #btn{
+        display: none;
+    }
+    .notif-bar{
+        display: none;
+    }
+    .mobile-banner img{
+        display: none;
+    }
+    /* .pic-banner img{
+        display: none;
+    } */
+    .pic-banner{
+        background: url(./images/banner-mobile.png);
+    }
+}
+
+       Js
+
+       let hamburger = document.querySelector(".hamburger");
+       let nav = document.querySelector("#nav");
+       
+           hamburger.addEventListener("click",()=>{
+               hamburger.classList.toggle("change");
+               nav.style = "display : block;"
+           })
+           window.onscroll = ()=>{
+               nav.style = "display : none;"
+           }

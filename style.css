@@ -1,0 +1,1043 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'traffik';
+    src: url(./fonts/B\ Traffic_0.ttf);
+}
+@font-face {
+    font-family: 'yekan';
+    src: url(./fonts/BYekan+.ttf);
+}
+@font-face {
+    font-family: 'yekan-bold';
+    src: url(./fonts/BYekan+\ Bold.ttf);
+}
+@font-face {
+    font-family: '';
+    src: url(./fonts/fanoos[editby].ttf);
+}
+body{
+    max-width: 100%;
+    height: 100%;
+}
+input[type="radio"] {
+    display: none;
+  }
+  
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 60px;
+    width: 100%;
+    padding: 0 10%;
+    background-color: rgb(255, 255, 255);
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(209, 207, 207);
+}
+.brand{
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+}
+.brand:hover .bar1 {
+    background-color: black;
+}
+.brand:hover .bar2 {
+    background-color: black;
+}
+.brand:hover .brand-name{
+    color: rgb(255, 87, 34);
+}
+.bars{
+    display: flex;
+    flex-direction: column;
+    margin-right: 7px;
+    margin-top: 2px;
+}
+.bar1{
+    text-align: center;
+    width: 15px;
+    height: 5px;
+    margin: 5px 0;
+    background-color: rgb(255, 87, 34);
+}
+.bar2{
+    width: 25px;
+    height: 5px;
+    background-color: rgb(255, 87, 34);
+}
+.brand-name{
+    font-size: 1.9rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: "traffik";
+}
+.navigation{
+    font-family: 'traffik';
+    font-size: 1rem;
+    font-weight: lighter;
+    align-items: center;
+}
+.navigation li{
+    padding-left: 3.5px;
+}
+.nav-item a{
+    text-decoration: none;
+    padding: 0 15px;
+    color: #545454;
+    cursor: pointer;
+
+    font-family: "yekan";
+}
+.nav-item a:hover{
+    color: rgb(255, 87, 34);
+}
+#btn-color{
+    width: 150px;
+    color: snow;
+    padding: 9px 0;
+    border-radius: 7px;
+}
+#btn{
+    border: none;
+    color: snow;
+    background-color: rgb(255, 87, 34);
+    padding: 10px 42px;
+    border-radius: 8px;
+}
+#btn:hover{
+    color: #fff;
+    transform: scale(.98);
+}
+
+
+/* body */
+    /* notif-bar */
+.notif-bar{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    background-image: url(./images/web-banner.jpg);
+    background-repeat: repeat-x;
+}
+
+
+#notification-binner{
+    padding: 0 10%;
+    top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    font-family: "yekan";
+}
+#blue-btn{
+    position: absolute;
+    width: 150px;
+    left: 10%;
+    top: 7px;
+}
+#notification-binner p{
+    position: absolute;
+    top: 8px;
+    font-size: 1.2rem;
+    /* padding-top: 2px; */
+    align-items: center;
+    margin: 0;
+}
+
+/* banner*/
+
+
+.pic-banner{
+    position: relative;
+    font-family: "yekan-bold";
+}
+.pic-banner img{
+    width: 100%;
+    height: 450px;
+    position: relative;
+}
+.mobile-banner{
+    height: 100%;
+    position: absolute;
+    top: 100px;
+    left: 10%;
+}
+.mobile-banner img{
+    width: 350px;
+    height: 550px;
+}
+.card-downloads{
+    position: absolute;
+    background-image: linear-gradient(51deg,rgba(23,26,60,.7) 5%,rgba(23,26,60,.3) 95%);
+    padding: 25px;
+    border-radius: 20px;
+    width: 550px;
+    height: 350px;
+    right: 10%;
+    top: 8%;
+}
+.card-downloads h1{
+    margin-bottom: 10px;
+    font-size: 3.5rem;
+    color: white;
+}
+.card-downloads h2{
+    font-family: "yekan";
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.btns-download{
+    display: flex;
+    flex-direction: column;
+}
+.white-btn{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.white-btn a{
+    width: 100%;
+    background-color: #fff;
+    margin: 7px;
+    padding: 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+}
+.white-btn p{
+    text-align: center;
+    font-family: "yekan";
+    padding: 0;
+    margin: 0 auto;
+}
+.white-btn p:hover{
+    color: rgb(77, 75, 75);
+}
+.light-btn{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.light-btn a{
+    width: 100%;
+    background-color: none;
+    margin: 7px;
+    padding: 16px;
+    border: 2.5px solid #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+}
+.light-btn p{
+    text-align: center;
+    font-family: "yekan";
+    padding: 0;
+    margin: 0 auto;
+}
+
+/* tapsi-services */
+
+.tapsi-services{
+    max-width: 100%;
+    margin: 0 10%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    font-family: "yekan";
+}
+.tapsi-services h3{
+    font-family: "yekan-bold";
+}
+.cars{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0;
+    max-width: 100%;
+    overflow: auto;
+}
+.services{
+    max-width: 100px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.services p{
+    text-align: center;
+    margin: 5px;
+}
+.i-classic, .i-tel , .i-line , .i-moto , .i-auto , .i-plus , .i-taxi , .i-hamyar{
+    opacity: .5;
+}
+.i-classic:hover, .i-tel:hover, .i-line:hover, .i-moto:hover, .i-auto:hover, .i-plus:hover, .i-taxi:hover, .i-hamyar:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.o1 , .o2 , .o3 , .o4 , .o5 , .o6 , .o7 , .o8 {
+    display: none;
+} 
+
+/* services information */
+
+.tab-pan{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10%;
+    margin-bottom: 100px;
+}
+.content-description{
+    width: 45%;
+    font-family: "yekan";
+}
+.content-description h3{
+    padding: 15px 0;
+}
+.content-description p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #545454;
+    line-height: 35px;
+}
+.service-img{
+    width: 50%;
+    align-items: center;
+}
+.service-img img{
+    width: 90%;
+    left: 0;
+}
+
+.classic , .tell , .line , .moto-peyk , .auto-peyk , .t-plus , .t-taxi , .hamyar{
+    display: none;
+}
+#r1:checked ~ .classic{
+    display: flex;
+}
+#r2:checked ~ .tell{
+    display: flex;
+}
+#r3:checked ~ .line{
+    display: flex;
+}
+#r4:checked ~ .moto-peyk{
+    display: flex;
+}
+#r5:checked ~ .auto-peyk{
+    display: flex;
+}
+#r6:checked ~ .t-plus{
+    display: flex;
+}
+#r7:checked ~ .t-taxi{
+    display: flex;
+}
+#r8:checked ~ .hamyar{
+    display: flex;
+}
+#r1:checked ~ .opacity1 img{
+    opacity: 1;
+}
+
+#border{
+    border: #e2dddd solid 1px;
+    margin: 80px 10%;
+}
+
+#r1:checked ~ .opacity1{
+    opacity: 100%;
+}
+
+
+
+
+
+/* ******container-imac******** */
+
+.container{
+    /* width: 100%; */
+    margin: 0 10px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "yekan";
+}
+.content{
+    width: 45%;
+    margin: 0 2%;
+}
+.content h2{
+    margin-bottom: 20px;
+}
+.content p{
+    color: #333;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.imac{
+    width: 50%;
+    margin-right: 10%;
+}
+.imac img{
+    width: 90%;
+    margin: auto;
+}
+.link-container{
+    display: flex;
+    margin: 20px 0;
+}
+.link-container a{
+    color: rgb(255, 87, 34);
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+}
+.link-container i{
+    color: rgb(255, 87, 34);
+}
+#btn-orange{
+    border: none;
+    background-color: rgb(255, 87, 34);
+    color: snow;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+
+
+/* **********container-imac2************* */
+.mac-book{
+    width: 50%;
+    /* margin-left: 5%;
+    margin-bottom: 8%; */
+}
+.mac-book img{
+    width: 80%;
+    margin: auto;
+}
+#mac-book{
+    margin-left: 10px;
+}
+
+
+/* **********section-parallax*********** */
+
+.section-parallax{
+    width: 100%;
+    height: 180px;
+    background: url(./images/parallax.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    
+    background-color: green;
+    color: #fff;
+
+}
+.content-wrapper{
+    height: 100%;
+    padding: 70px 10%;
+    display: flex;
+    align-items: center;
+}
+.content-wrapper div{
+    padding: 0 20px;
+    text-align: center;
+    width: 24.5%;
+    vertical-align: baseline;
+}
+.content-wrapper h3{
+    font-family: "yekan-bold";
+    font-size: 25px;
+}
+.content-wrapper p{
+    font-family: "yekan";
+}
+.matn1 , .matn2 , .matn3 , .matn4{
+    display: none;
+}
+.title1:hover ~ .matn1{
+    display: block;
+}
+.title2:hover ~ .matn2{
+    display: block;
+}
+.title3:hover ~ .matn3{
+    display: block;
+}
+.title4:hover ~ .matn4{
+    display: block;
+}
+.divar{
+    width: 2px;
+    height: 50px;
+    background-color: #e2dddd;
+}
+
+
+/* ************ section-drivers *************** */
+
+.section-drivers{
+    max-width: 100%;
+    margin: 0 10%;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.section-drivers h1 , #title{
+    font-family: "traffik";
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.section-drivers p{
+    font-family: "yekan";
+    color: #4d4d4d;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 15px;
+}
+.section-drivers a{
+    text-decoration: none;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.section-drivers ul{
+    list-style-type: decimal;
+}
+.sub-title {
+    color: #4d4d4d;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 2px;
+    font-family: "yekan";
+}
+
+.driver-img{
+    width: 45%;
+    margin-right: 5%;
+}
+.driver-img img{
+    border-radius: 12px;
+    width: 100%;
+}
+
+.drivers-description{
+    display: flex;
+    flex-direction: column;
+}
+.drivers-description h1{
+    font-size: 2.5rem;
+}
+
+.links-wrapper{
+    font-family: "yekan";
+    align-items: center;
+    display: flex;
+    margin-top: 10px;
+    max-width: 100%;
+}
+.links-wrapper a{
+    align-items: center;
+    background-color: #0065dc;
+    border-radius: 12px;
+    color: #fff;
+    display: flex;
+    font-size: 16px;
+    height: 56px;
+    justify-content: center;
+    padding: 5px 15px;
+    margin: 10px;
+    white-space: nowrap;
+    width: 200px;
+}
+
+
+/* ************* post tapsi **************** */
+
+.section-posts{
+    margin: 5% 10%;
+    display: flex;
+    flex-direction: column;
+}
+.title-post{
+    font-family: "traffik";
+    word-spacing: .2rem;
+}
+.posts{
+    display: flex;
+    justify-content: space-between;
+}
+.post{
+    width: 32%;
+    background-color: #ffffff;
+}
+.post:hover{
+    box-shadow: 2px 2px 2px 2px rgb(245, 240, 240);
+}
+.post a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.post a img{
+    border-radius: 10px;
+}
+.post h3{
+    color: #333;
+}
+.post p{
+    font-family: "yekan";
+    color: #666;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 15px;
+
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden ;
+    line-clamp: 2;
+    box-orient: vertical;
+}
+
+
+
+/* ***************map*****************/
+
+.section-map{
+    background: url(./images/map-back.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+.tapsi-citys{
+    max-width: 100%;
+    padding: 40px 10%;
+}
+.city-title{
+    margin-bottom: 20px;
+    font-family: "traffik";
+}
+.city-names{
+    display: grid;
+    grid-template-columns: repeat(8,140px);
+}
+.city{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 10px 0;
+}
+.city span:nth-child(2){
+    letter-spacing: 2px;
+}
+
+
+/* ***************footer*****************/
+
+footer{
+    background-color: #000000;
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "yekan";
+    line-height: 30px;
+    flex-wrap: wrap;
+}
+.tapsi-logo{
+    margin-bottom: 10px;
+    width: 80%;
+}
+.footer-col{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.copy-right{
+    color: #acacac;
+    font-size: .8rem;
+}
+.footer-col h3{
+    color: #ffffff;
+    font-family: "yekan";
+    font-weight: 10;
+    font-size: .8rem;
+}
+.footer-col h6{
+    color: #fff;
+    font-size: 1.1rem;
+}
+.footer-col a{
+    text-decoration: none;
+    color: #fff;
+    font-size: .9rem;
+}
+.footer-col a:hover{
+    color: rgb(255, 87, 34);
+}
+
+
+.trust-col{
+    display: flex;
+    flex-direction: column;
+    width: 26%;
+    margin-top: 10px;
+}
+.trust-col h3{
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    margin: 10px 0;
+}
+.footer-logo{
+    background-color: snow;
+    border-radius: 15px;
+    margin: 2.5px;
+}
+.footer-logo img{
+    align-items: center;
+    height: 120px;
+    width: 120px;
+}
+.trust{
+    display: flex;
+    flex-direction: row;
+}
+
+.social-links{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+.social-links img{
+    height: 20px;
+}
+.social-links i:hover{
+    color: rgb(255, 87, 34);
+}
+
+/* ********************* hamburger menu ******************* */
+
+.hamburger{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.ham1 , .ham2 , .ham3{
+    width: 25px;
+    height: 4px;
+    margin: 2px 0;
+    background-color: #000000;
+}
+
+
+.download-mobile{
+    width: 100%;
+    height: 500px;
+    background: url(.//images/banner-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+
+
+@media (max-width: 451px) {
+    header{
+        max-width: 100%;
+    }
+    .download-mobile{
+        max-width: 100%;
+    }
+    .hamburger{
+        display: block;
+    }
+    .change .ham2{
+        opacity: 0;
+    }
+    .change .ham1{
+        transform: rotate(-45deg) translate(-6px,2px);
+    }
+    .change .ham3{
+        transform: rotate(45deg) translate(-6px,-2px);
+    }
+    #blue-btn{
+        display: none;
+    }
+    #btn{
+        display: none;
+    }
+    .notif-bar{
+        display: none;
+    }
+
+    #nav{
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: -500px;
+        /* top: 102.5%; */
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: rgb(255, 255, 255);
+        transition: .5s;
+    }
+    #nav.active{
+        top: 60px;
+    }
+    .nav-item a{
+        color: #7c7c7c;
+    }
+    .section-download{
+        display: none;
+    }
+    .mobile-banner img{
+        display: none;
+    }
+
+    .download-mobile{
+        display: block;
+    }
+    .card-downloads{
+        position: absolute;
+        width: 250px;
+        padding: 8px;
+        top: 18%;
+        right: 15%;
+    }
+    .card-downloads h1{
+        font-family: "yekan-bold";
+        font-size: 2rem;
+    }
+    .card-downloads h2{
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+    .btns-download{
+        align-items: center;
+        margin-left: 15px;
+    }
+    .white-btn , .light-btn{
+        flex-direction: column;
+        width: 80%;
+    }
+    .white-btn p , .light-btn p{
+        font-size: .9rem;
+    }
+    .white-btn a , .light-btn a{
+        padding: 10px ;
+    }
+
+    /* ************service tapsi ********************* */
+    .tab-pan{
+        margin: 0 3%;
+    }
+    .service-img{
+        display: none;
+    }
+    .content-description{
+        width: 100%;
+    }
+    .content-description h3{
+        padding: 5px 0;
+    }
+    .content-description p{
+        font-size: .9rem;
+        color: #545454;
+        line-height: 30px;
+    }
+
+    /* *************container mac & imac *******************/
+    .container{
+        margin-bottom: 80px;
+    }
+    .container1{
+        max-width: 450px;
+        flex-direction: column-reverse;
+    }
+    .container2{
+        max-width: 450px;
+        flex-direction: column;
+    }
+    .content{
+        width: 90%;
+    }
+    .imac{
+        width: 100%;
+    }
+    .imac{
+        margin-bottom: 50px;
+     }
+     .mac-book{
+        width: 100%;
+        margin: 20px 30px;
+     }
+     .mac-book img{
+        margin-bottom: 20px;
+     }
+
+     /* ***********section-parallax**************/
+     .section-parallax{
+        height: 100%;
+     }
+     .content-wrapper{
+        flex-direction: column;
+        padding: 0;
+     }
+     .content-wrapper div{
+        width: 100%;
+     }
+     .content-wrapper div h3{
+        font-size: 1rem;
+        padding: 20px 0;
+     }
+     .content-wrapper div p{
+        font-size: .8rem;
+        margin-bottom: 5px;
+     }
+     .divar{
+        display: none;
+     }
+
+     /* **********section-drivers***********/
+     .section-drivers{
+        flex-direction: column;
+        max-width: 100%;
+     }
+     .driver-img {
+        width: 100%;
+        margin-right: 0;
+     }
+     .driver-img img{
+        width: 98%;
+     }
+     .drivers-description{
+        max-width: 100%;
+     }
+     .drivers-description h1{
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-top: 50px;
+     }
+     .drivers-description p{
+        font-size: 14px;
+     }
+     .sub-title{
+        font-size: 16px;
+     }
+     .sub-title a{
+        font-size: 14px;
+     }
+     .drivers-description ul{
+        margin: 0 5%;
+     }
+     .links-wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+
+     /* *******************section post***************** */
+     .section-posts{
+        flex-direction: column;
+     }
+     .posts{
+        flex-direction: column;
+     }
+     .post{
+        width: 100%;
+        margin: 0;   
+     }
+     .post{
+        width: 100%;   
+     }
+     .post a{
+        padding: 0;
+     }
+     .post p{
+        font-size: 14px;
+     }
+
+     /* tapsi-city */
+     .tapsi-citys{
+        display: none;
+     }
+     .section-map{
+        display: none;
+     }
+
+
+     /* footer */
+     footer{
+        padding: 5% 5%;
+
+     }
+     .footer-col{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 25px;
+     }
+     .footer-col h6{
+        font-size: 20px;
+        font-weight: bolder;
+     }
+     .tapsi-logo{
+        width: 139px;
+        height: 30px;
+     }
+     .copy-right{
+        display: none;
+
+     }
+     .footer-logo{
+       margin: 0 20px;
+        justify-content: space-between;
+     }
+     #social{
+        display: none;
+     }
+     #rights{
+        width: 100%;
+        font-size: 14px;
+        padding: 20px 0;
+        color: #acacac;
+        font-family: "yekan";
+        margin: 0;
+     }
+     .trust-col{
+        width: 100%;
+     }
+     .trust-col h3{
+        display: none;
+     }
+     .social-links {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+     }
+     .social-links a{
+        padding: 0 25px;
+     }
+}
